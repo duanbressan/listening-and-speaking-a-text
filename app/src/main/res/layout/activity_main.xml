@@ -5,27 +5,62 @@
     android:layout_height="match_parent"
     tools:context="duan.example.listeningandspeakingtext.MainActivity"
     android:weightSum="10"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@android:color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="1"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:background="@color/colorPrimary">
 
-        <ImageButton
+        <TextView
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:text="Gravar"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorPrimary"/>
 
-        <ImageButton
+        <TextView
             android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:text="Reproduzir"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorPrimary"/>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_voice"
+            android:background="@color/colorPrimary"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_play"
+            android:background="@color/colorPrimary"/>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -33,7 +68,10 @@
         android:layout_weight="7">
         <EditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent"
+            android:textColor="@android:color/black"
+            android:hint="Exemplo de Texto"
+            android:gravity="bottom|center"/>
 
     </RelativeLayout>
 
